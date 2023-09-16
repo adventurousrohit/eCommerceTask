@@ -7,6 +7,9 @@ This project is a imitation of ecommerce website
 
 ### Commands to run after downloading project :
 
+### clone project
+> git clone https://github.com/adventurousrohit/eCommerceTask.git
+
 ### Prerequisite- Python3 
 
 #### - Create virtual Environment inside same folder as 'manage.py'
