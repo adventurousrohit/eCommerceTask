@@ -161,18 +161,13 @@ function ProductDetailsPage({ history, match}) {
                                 </span>
                             </Col>
                             <Col sm>
-                                <b>Buy</b>
+                                <b>Stock Available</b>
                                 <hr />
-                                {product?.[0]?.stock ?
-                                    <Link to={`${product.id}/checkout/`}>
-                                        <button className="btn btn-primary">
-                                            <span>Pay with Stripe</span>
-                                        </button>
-                                    </Link>
-                                    :
-                                    <Message variant='danger'>
-                                        Out Of Stock!
-                                    </Message>}
+                            
+                                    <Message >
+                                        {product?.[0]?.stock}
+                                    </Message>
+                                    {/* } */}
                                    
                             </Col>
                             <Col sm>

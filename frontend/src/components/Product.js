@@ -21,6 +21,10 @@ function Product({ product }) {
                     <Card.Text as="h3">
                         ₹ {product.price}
                     </Card.Text>
+                    Stock Available
+                    <Card.Text as="h3">
+                        {product.stock}
+                    </Card.Text>
                 </Card.Body>
             </Card>
         </div>

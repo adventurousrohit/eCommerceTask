@@ -8,9 +8,7 @@ import Login from './pages/LoginPage'
 import Register from './pages/RegisterPage'
 import NotFound from './pages/NotFoundPage'
 import axios from 'axios'
-// import { ToastContainer } from 'react-toastify'
 import {getTokenCookie} from './common/token'
-import ProductListWithCat from './pages/ProductListWithCat'
 import Cart from './components/Cart'
 
 
@@ -38,9 +36,6 @@ if(getTokenCookie()&&!data){
      return
     }
   }
-  // console.log("ddd",data)
-
-  // cart info
 
   const cartInfo= async (e) => {
     // e.preventDefault()
@@ -66,10 +61,7 @@ if(getTokenCookie()&&!data){
           <Switch>
             <Route path="/" component={ProductListPage} exact />
             <Route path="/cart" component={Cart} exact />
-            {/* <Route path="/" component={ProductListWithCat} exact /> */}
             <Route path="/product/:id" component={ProductDetailsPage} exact />
-            {/* <Route path="/product-update/:id/" component={ProductUpdatePage} exact /> */}
-            {/* <Route path="/product/:id/checkout/" component={CheckoutPage} exact /> */}
             <Route path="/login" component={Login} exact />
             <Route path="/register" component={Register} exact />
             <Route path="" component={NotFound} exact />
