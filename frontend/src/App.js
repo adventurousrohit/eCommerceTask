@@ -61,7 +61,7 @@ if(getTokenCookie()&&!data){
         <div className="container mt-4">
           <Switch>
             <Route path="/" component={ProductListPage} exact />
-            <Route path="/:id" component={ProductListWithCat} exact />
+            {/* <Route path="" component={ProductListWithCat} exact /> */}
             <Route path="/cart" component={Cart} exact />
             <Route path="/product/:id" component={ProductDetailsPage} exact />
             <Route path="/login" component={Login} exact />
