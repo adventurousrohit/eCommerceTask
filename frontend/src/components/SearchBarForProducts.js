@@ -52,7 +52,7 @@ console.log("ppd",product)
                     /> */}
                         <DropdownButton id="dropdown-basic-button" title="Category">
                             {product?.map((cat) => (
-                                <Dropdown.Item key={cat?.name} href={`/${cat?.id}/${cat?.name}`}>
+                                <Dropdown.Item key={cat?.name} href={`${cat?.id}`}>
                                     {cat?.name}
                                 </Dropdown.Item>
                             ))}
